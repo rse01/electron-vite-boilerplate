@@ -1,28 +1,28 @@
 # electron-vite-boilerplate
 
-🥳 Really simple `Electron` + `Vite` boilerplate.
+🥳 Un boilerplate `Electron` + `Vite` vraiment simple.
 
 ![screenshort.png](https://github.com/electron-vite/electron-vite-boilerplate/blob/main/public/screenshort.png?raw=true)
 
-## Features
+## Fonctionnalités
 
-📦 Out of the box  
-🚀 Quick Start of [vite-plugin-electron](https://github.com/electron-vite/vite-plugin-electron)  
-🎯 Based on the official [template-vanilla-ts](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-vanilla-ts), less invasive  
+📦 Prêt à l'emploi  
+🚀 Démarrage rapide avec [vite-plugin-electron](https://github.com/electron-vite/vite-plugin-electron)  
+🎯 Basé sur le template officiel [template-vanilla-ts](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-vanilla-ts), peu invasif
 
-## Run Setup
+## Mise en route
 
 ```sh
-# clone the project
+# cloner le projet
 git clone https://github.com/electron-vite/electron-vite-boilerplate.git
 
-# enter the project directory
+# entrer dans le dossier du projet
 cd electron-vite-boilerplate
 
-# install dependency
+# installer les dépendances
 npm install
 
-# develop
+# développer
 npm run dev
 ```
 
@@ -31,11 +31,11 @@ npm run dev
 ```diff
 + ├─┬ electron
 + │ ├─┬ main
-+ │ │ └── index.ts    entry of Electron-Main
++ │ │ └── index.ts    point d'entrée du processus principal Electron
 + │ └─┬ preload
-+ │   └── index.ts    entry of Preload-Scripts
++ │   └── index.ts    point d'entrée des scripts de préchargement
   ├─┬ src
-  │ └── main.ts       entry of Electron-Renderer
+  │ └── main.ts       point d'entrée du processus de rendu Electron
   ├── index.html
   ├── package.json
   └── vite.config.ts
@@ -43,7 +43,7 @@ npm run dev
 
 ## Be aware
 
-🚨 By default, this template integrates Node.js in the Renderer process. If you don't need it, you just remove the option below. [Because it will modify the default config of Vite](https://github.com/electron-vite/vite-plugin-electron/tree/main/packages/electron-renderer#config-presets-opinionated).
+🚨 Par défaut, ce template intègre Node.js dans le processus de rendu. Si vous n'en avez pas besoin, vous juste enlever l'option ci-dessous. [Parce que cela modifiera la configuration par défaut de Vite](https://github.com/electron-vite/vite-plugin-electron/tree/main/packages/electron-renderer#config-presets-opinionated).
 
 ```diff
 # vite.config.ts
@@ -58,7 +58,3 @@ electron({
 - [dependencies vs devDependencies](https://github.com/electron-vite/vite-plugin-electron/tree/main/packages/electron-renderer#dependencies-vs-devdependencies)
 - [Using C/C++ native addons in Electron-Renderer](https://github.com/electron-vite/vite-plugin-electron/tree/main/packages/electron-renderer#load-nodejs-cc-native-modules)
 - [Node.js ESM packages](https://github.com/electron-vite/vite-plugin-electron/tree/main/packages/electron-renderer#nodejs-esm-packages) (e.g. `execa` `node-fetch`)
-
-## 🍵 🍰 🍣 🍟
-
-<img width="270" src="https://github.com/caoxiemeihao/blog/blob/main/assets/$qrcode/$.png?raw=true">
