@@ -26,6 +26,21 @@ npm install
 npm run dev
 ```
 
+## AI / Vibe Coding
+
+Ce dépôt inclut une structure simple pour le développement avec des agents IA.
+
+```text
+.ai/
+├── agents/      # rôles des agents IA
+├── skills/      # compétences utiles
+├── rules/       # règles du projet
+├── context/     # informations sur le projet
+└── workflows/   # workflows de développement
+```
+
+Consultez `AGENTS.md` avant de travailler sur le projet.
+
 ## Directory
 
 ```diff
